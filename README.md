@@ -31,3 +31,6 @@ Built for **small business owners** or teams that want a simple, file-based solu
 1. Clone this repository:
    ```bash
    git clone https://github.com/ediazpy/Employee-Payroll-Tracker.git
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ediazpy/Employee-Payroll-Tracker)
+
