@@ -16,9 +16,11 @@ public class EmployeePayTrack
 
     private static ArrayList<Employee> employees = new ArrayList<>();
     private static Scanner scan = new Scanner(System.in);
+System.setProperty("java.awt.headless", "true");
 
     public static void main(String[] args)
     {
+        System.setProperty("java.awt.headless", "true");
 
         loadEmployees(); // Load saved employee data at startup
 
@@ -44,7 +46,7 @@ public class EmployeePayTrack
                 }
                 case 3 ->
                 {
-                    editPay();
+                    editEmployeeInfo();
                     pause();
                 }
                 case 4 ->
@@ -1174,8 +1176,7 @@ public class EmployeePayTrack
             System.out.print("|");
             for (int i = 0; i < numCols; i++)
             {
-                System.out.print("-".repeat(Math.min(colWidths[i] + 2, 15)));
-
+                System.out.printf(" %-" + colWidths[i] + "s |", row[i]);
             }
             System.out.println();
         }
@@ -1280,39 +1281,39 @@ public class EmployeePayTrack
     // ------------------------------------------------------------
 // HELP INFORMATION
 // ------------------------------------------------------------
-private static void showHelp()
-{
-    System.out.println("\n--------------------------------------------");
-    System.out.println("HELP MENU - HOW TO USE EMPLOYEE PAYROLL TRACKER");
-    System.out.println("--------------------------------------------");
-    System.out.println("1) View Weekly Pay");
-    System.out.println("   Displays all employees and their current weekly pay.");
-    System.out.println();
-    System.out.println("2) View Year-to-Date (YTD) Pay");
-    System.out.println("   Shows the total earnings for each employee for the year.");
-    System.out.println();
-    System.out.println("3) Edit Employee Info");
-    System.out.println("   Allows you to update an employee's ID or name if needed.");
-    System.out.println();
-    System.out.println("4) Manage Invoices");
-    System.out.println("   Lets you view, add, edit, or change invoice status for each employee.");
-    System.out.println();
-    System.out.println("5) Close Out Week");
-    System.out.println("   Adds the employee's current weekly pay to their YTD total and resets weekly pay.");
-    System.out.println();
-    System.out.println("6) Add New Employee");
-    System.out.println("   Registers a new employee and creates their individual CSV file.");
-    System.out.println();
-    System.out.println("7) Help");
-    System.out.println("   Displays this help menu explaining all options.");
-    System.out.println();
-    System.out.println("8) About");
-    System.out.println("   Displays program details, author information, and GitHub link.");
-    System.out.println();
-    System.out.println("9) Exit");
-    System.out.println("   Saves all data and exits the program safely.");
-    System.out.println("--------------------------------------------");
-}
 
+    private static void showHelp()
+    {
+        System.out.println("\n--------------------------------------------");
+        System.out.println("HELP MENU - HOW TO USE EMPLOYEE PAYROLL TRACKER");
+        System.out.println("--------------------------------------------");
+        System.out.println("1) View Weekly Pay");
+        System.out.println("   Displays all employees and their current weekly pay.");
+        System.out.println();
+        System.out.println("2) View Year-to-Date (YTD) Pay");
+        System.out.println("   Shows the total earnings for each employee for the year.");
+        System.out.println();
+        System.out.println("3) Edit Employee Info");
+        System.out.println("   Allows you to update an employee's ID or name if needed.");
+        System.out.println();
+        System.out.println("4) Manage Invoices");
+        System.out.println("   Lets you view, add, edit, or change invoice status for each employee.");
+        System.out.println();
+        System.out.println("5) Close Out Week");
+        System.out.println("   Adds the employee's current weekly pay to their YTD total and resets weekly pay.");
+        System.out.println();
+        System.out.println("6) Add New Employee");
+        System.out.println("   Registers a new employee and creates their individual CSV file.");
+        System.out.println();
+        System.out.println("7) Help");
+        System.out.println("   Displays this help menu explaining all options.");
+        System.out.println();
+        System.out.println("8) About");
+        System.out.println("   Displays program details, author information, and GitHub link.");
+        System.out.println();
+        System.out.println("9) Exit");
+        System.out.println("   Saves all data and exits the program safely.");
+        System.out.println("--------------------------------------------");
+    }
 
 }
