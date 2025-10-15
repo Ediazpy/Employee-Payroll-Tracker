@@ -1,0 +1,3 @@
+Invoice#,Customer,Date,Employee,Status,CreditCardUsed,Total,Tip,Materials,Fees,Commission
+1234,Johnny Doe,10/14/2025,John Doe,paid,true,725.00,72.50,41.02,20.00,414.49
+12345,johnny bravo,10/14/2025,John Doe,paid,true,725.00,72.50,41.02,20.00,404.49

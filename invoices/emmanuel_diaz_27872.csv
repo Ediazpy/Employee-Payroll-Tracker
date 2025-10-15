@@ -1,0 +1,3 @@
+Invoice#,Customer,Date,Status,Total,Tip,Materials,Fees,Commission
+1234,Jong Duhh,10/15/2025,Unpaid,725.00,72.50,41.02,0.00,455.51
+123,Bianca Diaz,10/15/2025,Paid,1200.00,80.00,20.00,0.00,670.00

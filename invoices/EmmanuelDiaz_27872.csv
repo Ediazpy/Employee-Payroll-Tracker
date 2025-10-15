@@ -1,0 +1,4 @@
+Invoice#,Customer,Date,Status,Total,Tip,Materials,Fees,Commission
+1234,john doe,10/14/2025,paid,725.00,72.50,41.02,0.00,455.51
+4321,john doe,10/14/2025,paid,725.00,72.50,41.02,20.00,404.49
+1234,John Doe,10/14/2025,Paid,725.00,72.50,41.02,0.00,455.51

@@ -1,0 +1,2 @@
+Invoice#,Customer,Date,Employee,Status,CreditCardUsed,Total,Tip,Materials,Fees,Commission
+12345,funmaster flex,10/11/2025,Emmanuel Diaz,padi,false,725.00,72.50,41.02,0.00,455.51
