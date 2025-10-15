@@ -1,0 +1,2 @@
+Invoice#,Customer,Date,Status,Total,Tip,Materials,Fees,Commission
+1234,jd,10/14/2025,Unpaid,725.00,50.00,34.00,20.00,385.50
